@@ -1,0 +1,43 @@
+/////////////////////////////////////// default mobile devices
+.page-404 {
+	height: 750px;
+	padding: 0px;
+	text-align: center;
+	background: @color-default;
+		background-image: url("/images/stars.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+	.content-404 {
+		padding: 50px;
+		padding-top: 150px;
+		color: #333;
+		h1 {
+			font-size: 100px;
+			color: white;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+		}
+		p {
+			margin-bottom: 50px;
+		}
+	}
+
+}
+
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	.page-404 {
+		.content-404 {
+
+		}
+	}
+}
+
+///////////////////////////////////////////////////	laptop devices
+@media  (min-width : 996px) {
+	// not required
+}
+
+///////////////////////////////////////////////////	dekstop devices
+@media  (min-width : 1350px) {
+	// not required
+}
