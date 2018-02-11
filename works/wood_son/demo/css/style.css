@@ -72,8 +72,12 @@ ul, ol {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	margin: -32px 0 0 -32px;
+	margin-left: -50px;
 	padding: 0;
+}
+#status img {
+	width: 100px;
+	height: auto;
 }
 ul, ol {
 	padding: 0;
