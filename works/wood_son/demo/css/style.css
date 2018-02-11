@@ -186,7 +186,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	-o-background-size: cover;
 }
 .intro .overlay {
-	background: rgba(0,0,0,0.2);
+	background-color: rgba(0, 0, 0, .7);
 }
 .intro .fa {
 	font-size: 94px;
@@ -469,10 +469,13 @@ color: #777;
 }
 
 @media (max-width: 768px) {
-#about .vcenter {
-	float: left;
-}
-#about img {
-	margin: 50px 0;
-}
+	#about .vcenter {
+		float: left;
+	}
+	#about img {
+		margin: 20px 0;
+	}
+	#about .vcenter .x {
+		margin-bottom: 20px;
+	}
 }
