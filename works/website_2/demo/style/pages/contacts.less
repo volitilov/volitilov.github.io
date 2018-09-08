@@ -1,0 +1,171 @@
+.contacts {
+	.card {
+		&:before {
+			z-index: 9999;
+			content: '';
+			display: inline-block;
+			position: absolute;
+			width: 25px;
+			height: 88px;
+			border-radius: 5px;
+			top: 511px;
+			right: -46px;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+			-webkit-animation-name: bounceInRight;
+			animation-name: bounceInRight;
+			background-color: #000;
+		}
+	}
+}
+///////////////////////////////////////// default mobile devioces
+.icon {
+	margin-top: 50px;
+	a {
+		transition: all 0.3s;
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		border: 3px solid @color-default;
+		border-radius: 50%;
+		background-color: transparent;
+		padding-top: 9px;
+		margin-right: 5px;
+		margin-top: 5px;
+		text-align: center;
+		-webkit-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+		-moz-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+		box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+		&:hover {
+			box-shadow: none;
+		}
+	}
+	i {
+		transition: all 0.3s;
+		font-size: 15px;
+		color: rgb(2, 168, 243);
+	}
+}
+.form-contacts {
+	padding: 0px;
+	padding-top: 90px;
+	form {
+		width: 100%;
+		fieldset {
+			border: none !important;
+		}
+		input {
+			color: #333;
+			transition: 0.4s;
+			background-color: transparent !important;
+			padding-left: 20px;
+			width: 100%;
+			height: 40px;
+			margin-top: 10px;
+			border-radius: 25px;
+			border: 3px solid transparent;
+			-webkit-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+		-moz-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+		box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+			&:hover {
+				box-shadow: none;
+			}
+			&:focus {
+				box-shadow: none;
+				border-radius: 6px;
+				-webkit-appearance: caps-lock-indicator;
+				outline: none;
+			}
+		}
+		textarea {
+			color: #333;
+			transition: 0.4s;
+			background-color: transparent !important;
+			margin-top: 10px;
+			padding-left: 20px;
+			padding-top: 20px;
+			width: 100%;
+			border-radius: 10px;
+			height: 200px;
+			border: 3px solid rgb(2, 168, 243) !important;
+			-webkit-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+			-moz-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+			box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+			&:hover {
+				box-shadow: none;
+			}
+			&:focus {
+				box-shadow: none;
+				border-radius: 6px;
+				-webkit-appearance: caps-lock-indicator;
+				outline: none;
+			}	
+		}
+		input::-webkit-input-placeholder,
+		textarea::-webkit-input-placeholder {
+			color: @color-default;
+		}
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+		}
+		legend {
+			display: none;
+		}
+		button {
+			margin-top: 10px;
+			border: none;
+			color: white;
+			transition: 0.4s;
+			font-size: 14px;
+			font-weight: bold;
+			background-color: @color-default;
+			border-radius: 4px;
+			-webkit-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+				-moz-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+				box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+			padding: 10px 30px;
+			&:hover {
+				cursor: pointer;
+				box-shadow: none;
+			}
+		}
+	}
+	.alert {
+		border-color: rgb(2, 168, 243);
+	}
+}
+
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	.form-contacts {
+		form {
+			input {
+				width: 30%;
+				margin: 5px;
+			}
+			textarea {
+				width: 43%;
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////	laptop devices
+@media  (min-width : 996px) {
+	// not required
+}
+
+///////////////////////////////////////////////////	dekstop devices
+@media  (min-width : 1200px) {
+	.form-contacts {
+		form {
+			input {
+				width: 20%;
+			}
+		}
+	}
+}

@@ -1,0 +1,437 @@
+///////////////////	color style
+@color-default: rgb(2, 168, 243);
+// @color-default: rgb(2, 168, 243);
+
+@color-default-rgba: rgba(2, 168, 243, .1);
+// @color-default-rgba: rgba(2, 168, 243, .1);
+
+@color-default-rgba-2: rgba(2, 168, 243, .6);
+// @color-default-rgba: rgba(2, 168, 243, .6);
+
+
+@color-1: rgb(64, 227, 224);
+@color-2: rgb(15, 226, 184);
+@color-3: rgb(48, 213, 200);
+@color-4: #ffca45;
+@color-5: #f938ab;
+@color-6: #ff3366;
+@color-7: rgb(167, 252, 0);
+@color-8: rgb(127, 255, 0);
+@color-9: rgb(124, 77, 255);
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////						   block
+/////////////////////////////////////// 	  default mobile devices
+.block {
+	z-index: 7 !important;
+	background-color: rgb(2, 168, 243);
+	// background: #eaeaea url("./../../images/bg.png") repeat;
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	.block {
+		margin-top: 53px;
+		&:after {
+			z-index: -1;
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 155px;
+			background-color: rgba(0, 0, 0, .1);
+			border-right: 1px solid rgba(0, 0, 0, .1);
+			border-left: 1px solid rgba(0, 0, 0, .1);
+		}
+		&:before {
+			z-index: -1;
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 155px;
+			background-color: rgba(0, 0, 0, .1);
+			border-right: 1px solid rgba(0, 0, 0, .1);
+			border-left: 1px solid rgba(0, 0, 0, .1);
+		}
+	}
+}
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 981px) {
+	
+}
+
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////							card
+/////////////////////////////////////// 	  default mobile devices
+.card {
+	padding: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 79%;
+	margin-left: 10.5%;
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	
+}
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 981px) {
+	
+}
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////						   cards
+/////////////////////////////////////// 	  default mobile devices
+.cards {
+	.card;
+	padding-bottom: 10px;
+	ul {
+		padding: 0px;
+		list-style: none;
+		margin-top: -10px;
+		li {
+			padding: 10px;
+			display: inline-block;
+		}
+	}
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	
+}
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 981px) {
+	
+}
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////			   slide and carusel
+/////////////////////////////////////// 	  default mobile devices
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+.Slide {
+	padding: 0px;
+	display: block;
+	&:after {
+		z-index: 9999;
+		content: '';
+		display: inline-block;
+		position: absolute;
+		width: 25px;
+		height: 88px;
+		border-radius: 5px;
+		left: 93px;
+		background-color: #000;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-name: bounceInLeft;
+		animation-name: bounceInLeft;
+	}
+	&:before {
+		z-index: 9999;
+		content: '';
+		display: inline-block;
+		position: absolute;
+		width: 25px;
+		height: 88px;
+		border-radius: 5px;
+		right: 93px;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-name: bounceInRight;
+		animation-name: bounceInRight;
+	}
+	.carousel-inner {
+		padding: 0px;
+		width: 100%;
+		.carousel-caption {
+			width: 100%;
+		}
+	}
+}
+.carousel-control {
+	transition: all 0.5s;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	padding-top: 12px;
+	border-radius: 50%;
+	background: #eaeaea url("./../../images/bg.png") repeat;
+	-webkit-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+	box-shadow: 0px 12px 25px -5px rgba(0,0,0,0.3);
+	z-index: 99;
+	&:hover {
+		box-shadow: none;
+	}
+}
+.carousel-control.right {
+	right: 37px;
+	top: 625px;
+	img {
+		width: 20%;
+	}
+}
+.carousel-control.left {
+	left: 37px;
+	top: 625px;
+	img {
+		width: 20%;
+	}
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	.carousel-control.right {
+		img {
+			width: 50%;
+		}
+	}
+	.carousel-control.left {
+		img {
+			width: 50%;
+		}
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////					  item-small
+/////////////////////////////////////// 	  default mobile devices
+.item-small {
+	transition: all 0.2s;
+	padding: 0px;
+	width: 314px;
+	min-height: 230px;
+	max-height: 230px; 
+	border-radius: 4px;
+	background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNjYwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2NjAgNDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2NjAgNDAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSI2NjAiIGhlaWdodD0iNDAwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0yNTguMTg0LDE0My41djExM2gxNDMuNjMydi0xMTNIMjU4LjE4NHogTTM5MC4yNDQsMjQ0LjI0N0gyNzAuNDM3di04OC40OTRoMTE5LjgwOEwzOTAuMjQ0LDI0NC4yNDcNCgkJTDM5MC4yNDQsMjQ0LjI0N3oiLz4NCgk8cG9seWdvbiBmaWxsPSIjRDhEOEQ4IiBwb2ludHM9IjI3Ni44ODEsMjM0LjcxNyAzMDEuNTcyLDIwOC43NjQgMzEwLjgyNCwyMTIuNzY4IDM0MC4wMTYsMTgxLjY4OCAzNTEuNTA1LDE5NS40MzQgDQoJCTM1Ni42ODksMTkyLjMwMyAzODQuNzQ2LDIzNC43MTcgCSIvPg0KCTxjaXJjbGUgZmlsbD0iI0Q4RDhEOCIgY3g9IjMwNS40MDUiIGN5PSIxNzguMjU3IiByPSIxMC43ODciLz4NCjwvZz4NCjwvc3ZnPg0K");
+	background-size: conatin;
+	background-position: center;
+	-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	&:before {
+		transition: all 0.2s;
+		border-radius: 4px;
+		background: transparent;
+		position: absolute;
+		text-align: center;
+		bottom: 0;
+		left: 0;
+		top: 0;
+		right: 0;
+		font-size: 13px;
+		display: inline-block;
+		color: transparent;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+	img {
+		width: 100%;
+		height: 224px;
+	}
+	&:hover {
+		box-shadow: none;
+		&:before {
+			padding: 30px;
+			padding-top: 50px;
+			color: #000;
+			background: #eaeaea url("./../../images/bg.png") repeat;
+			-webkit-animation-name: bounceIn;
+		 	animation-name: bounceIn;
+		}
+	}
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	
+}
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 981px) {
+	
+}
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////					 item-medium
+/////////////////////////////////////// 	  default mobile devices
+.item-medium {
+	transition: all 0.2s;
+	padding: 0px;
+	width: 482px;
+	height: 320px; 
+	border-radius: 4px;
+	background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNjYwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2NjAgNDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2NjAgNDAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSI2NjAiIGhlaWdodD0iNDAwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0yNTguMTg0LDE0My41djExM2gxNDMuNjMydi0xMTNIMjU4LjE4NHogTTM5MC4yNDQsMjQ0LjI0N0gyNzAuNDM3di04OC40OTRoMTE5LjgwOEwzOTAuMjQ0LDI0NC4yNDcNCgkJTDM5MC4yNDQsMjQ0LjI0N3oiLz4NCgk8cG9seWdvbiBmaWxsPSIjRDhEOEQ4IiBwb2ludHM9IjI3Ni44ODEsMjM0LjcxNyAzMDEuNTcyLDIwOC43NjQgMzEwLjgyNCwyMTIuNzY4IDM0MC4wMTYsMTgxLjY4OCAzNTEuNTA1LDE5NS40MzQgDQoJCTM1Ni42ODksMTkyLjMwMyAzODQuNzQ2LDIzNC43MTcgCSIvPg0KCTxjaXJjbGUgZmlsbD0iI0Q4RDhEOCIgY3g9IjMwNS40MDUiIGN5PSIxNzguMjU3IiByPSIxMC43ODciLz4NCjwvZz4NCjwvc3ZnPg0K");
+	background-size: conatin;
+	background-position: center;
+	-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	&:before {
+		transition: all 0.2s;
+		border-radius: 4px;
+		background: transparent;
+		position: absolute;
+		text-align: center;
+		bottom: 0;
+		left: 0;
+		top: 0;
+		right: 0;
+		font-size: 13px;
+		display: inline-block;
+		color: transparent;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+	img {
+		width: 100%;
+		height: 224px;
+	}
+	&:hover {
+		box-shadow: none;
+		&:before {
+			padding: 30px;
+			padding-top: 50px;
+			color: #000;
+			background: #eaeaea url("./../../images/bg.png") repeat;
+			-webkit-animation-name: bounceIn;
+		 	animation-name: bounceIn;
+		}
+	}
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	
+}
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 981px) {
+	
+}
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////					  item-large
+/////////////////////////////////////// 	  default mobile devices
+.item-large {
+	transition: all 0.5s;
+	left: 50%;
+	margin-left: -495px;
+	width: 990px;
+	min-height: 660px; 
+	border-radius: 4px;
+	background: #eaeaea url("./../../images/bg.png") repeat;
+	-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	
+}
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 981px) {
+	
+}
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////					  grid-block
+/////////////////////////////////////// 	  default mobile devices
+.grid-block {
+	padding: 0px;
+	padding-left: 10px;
+	padding-right: 8px;
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	
+}
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 981px) {
+	
+}
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////			   			  skills
+/////////////////////////////////////// 	  default mobile devices
+.skills {
+	padding: 0px;
+	padding-top: 20px;
+	.x {
+		li {
+			padding-bottom: 7px;
+		}
+	}
+	ul {
+		min-width: 15%;
+		li {
+			font-size: 11px;
+		}
+	}
+	.ul-progress {
+		width: 60%;
+	}
+	.progress {
+		overflow: hidden;
+		height: 13px;
+		background-color: #f5f5f5;
+		border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+		box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	}
+	.progress-bar {
+		float: left;
+		width: 0%;
+		height: 100%;
+		line-height: 13px;
+		color: #ffffff;
+		text-align: center;
+		background-color: rgb(2, 168, 243);
+		-webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+		box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+		-webkit-transition: width 0.6s ease;
+		-o-transition: width 0.6s ease;
+		transition: width 0.6s ease;
+	}
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	.skills {
+		ul {
+			min-width: 30%;
+		}
+		.ul-progress {
+			width: 70%;
+		}
+		.x {
+			li {
+				padding-bottom: 7px;
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 996px) {
+	
+}
